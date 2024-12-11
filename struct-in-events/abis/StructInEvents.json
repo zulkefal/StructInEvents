@@ -1,0 +1,277 @@
+[
+  { "type": "constructor", "inputs": [], "stateMutability": "nonpayable" },
+  {
+    "type": "function",
+    "name": "createQuestion",
+    "inputs": [
+      {
+        "name": "_question",
+        "type": "tuple",
+        "internalType": "struct StructInEvents.Question",
+        "components": [
+          {
+            "name": "questionType",
+            "type": "uint8",
+            "internalType": "enum StructInEvents.QuestionTypes"
+          },
+          { "name": "dealSize", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "noOfOracles",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "rewardPerOracle",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "loyaltyFee",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "priceCostPerSide",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "numberOfSides",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "creator", "type": "address", "internalType": "address" },
+          { "name": "loyalty", "type": "bool", "internalType": "bool" },
+          {
+            "name": "totalQuestionCost",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "totalRewardAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "sidesWhoJoined",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "startTime", "type": "uint256", "internalType": "uint256" },
+          { "name": "endTime", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "totalNumberOfOption",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "questionURI", "type": "string", "internalType": "string" }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getQuestion",
+    "inputs": [
+      { "name": "questionId", "type": "uint256", "internalType": "uint256" }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct StructInEvents.Question",
+        "components": [
+          {
+            "name": "questionType",
+            "type": "uint8",
+            "internalType": "enum StructInEvents.QuestionTypes"
+          },
+          { "name": "dealSize", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "noOfOracles",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "rewardPerOracle",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "loyaltyFee",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "priceCostPerSide",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "numberOfSides",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "creator", "type": "address", "internalType": "address" },
+          { "name": "loyalty", "type": "bool", "internalType": "bool" },
+          {
+            "name": "totalQuestionCost",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "totalRewardAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "sidesWhoJoined",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "startTime", "type": "uint256", "internalType": "uint256" },
+          { "name": "endTime", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "totalNumberOfOption",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "questionURI", "type": "string", "internalType": "string" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "questionCount",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "questions",
+    "inputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [
+      {
+        "name": "questionType",
+        "type": "uint8",
+        "internalType": "enum StructInEvents.QuestionTypes"
+      },
+      { "name": "dealSize", "type": "uint256", "internalType": "uint256" },
+      { "name": "noOfOracles", "type": "uint256", "internalType": "uint256" },
+      {
+        "name": "rewardPerOracle",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      { "name": "loyaltyFee", "type": "uint256", "internalType": "uint256" },
+      {
+        "name": "priceCostPerSide",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      { "name": "numberOfSides", "type": "uint256", "internalType": "uint256" },
+      { "name": "creator", "type": "address", "internalType": "address" },
+      { "name": "loyalty", "type": "bool", "internalType": "bool" },
+      {
+        "name": "totalQuestionCost",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "totalRewardAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "sidesWhoJoined",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      { "name": "startTime", "type": "uint256", "internalType": "uint256" },
+      { "name": "endTime", "type": "uint256", "internalType": "uint256" },
+      {
+        "name": "totalNumberOfOption",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      { "name": "questionURI", "type": "string", "internalType": "string" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "QuestionCreated",
+    "inputs": [
+      {
+        "name": "question",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct StructInEvents.Question",
+        "components": [
+          {
+            "name": "questionType",
+            "type": "uint8",
+            "internalType": "enum StructInEvents.QuestionTypes"
+          },
+          { "name": "dealSize", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "noOfOracles",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "rewardPerOracle",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "loyaltyFee",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "priceCostPerSide",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "numberOfSides",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "creator", "type": "address", "internalType": "address" },
+          { "name": "loyalty", "type": "bool", "internalType": "bool" },
+          {
+            "name": "totalQuestionCost",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "totalRewardAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "sidesWhoJoined",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "startTime", "type": "uint256", "internalType": "uint256" },
+          { "name": "endTime", "type": "uint256", "internalType": "uint256" },
+          {
+            "name": "totalNumberOfOption",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          { "name": "questionURI", "type": "string", "internalType": "string" }
+        ]
+      }
+    ],
+    "anonymous": false
+  }
+]

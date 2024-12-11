@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: StructInEvents
+    network: holesky
+    source:
+      address: "0x438D3308884974a1C5c704F65033cEfeDd907B52"
+      abi: StructInEvents
+      startBlock: 2915045
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - QuestionCreated
+      abis:
+        - name: StructInEvents
+          file: ./abis/StructInEvents.json
+      eventHandlers:
+        - event: QuestionCreated((uint8,uint256,uint256,uint256,uint256,uint256,uint256,address,bool,uint256,uint256,uint256,uint256,uint256,uint256,string))
+          handler: handleQuestionCreated
+      file: ./src/struct-in-events.ts

@@ -1,0 +1,22 @@
+type QuestionCreated @entity(immutable: true) {
+  id: Bytes!
+  question_questionType: Int! # uint8
+  question_dealSize: BigInt! # uint256
+  question_noOfOracles: BigInt! # uint256
+  question_rewardPerOracle: BigInt! # uint256
+  question_loyaltyFee: BigInt! # uint256
+  question_priceCostPerSide: BigInt! # uint256
+  question_numberOfSides: BigInt! # uint256
+  question_creator: Bytes! # address
+  question_loyalty: Boolean! # bool
+  question_totalQuestionCost: BigInt! # uint256
+  question_totalRewardAmount: BigInt! # uint256
+  question_sidesWhoJoined: BigInt! # uint256
+  question_startTime: BigInt! # uint256
+  question_endTime: BigInt! # uint256
+  question_totalNumberOfOption: BigInt! # uint256
+  question_questionURI: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
