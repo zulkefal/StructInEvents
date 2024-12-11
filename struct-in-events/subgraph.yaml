@@ -8,9 +8,9 @@ dataSources:
     name: StructInEvents
     network: holesky
     source:
-      address: "0x438D3308884974a1C5c704F65033cEfeDd907B52"
+      address: "0xF11D8EA5A45f6064C5dc27d096c38C15ff67743e"
       abi: StructInEvents
-      startBlock: 2915045
+      startBlock: 2915023
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
